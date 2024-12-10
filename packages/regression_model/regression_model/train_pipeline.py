@@ -1,9 +1,3 @@
-import sys
-import os
-
-# Ajoutez dynamiquement le chemin du parent au PYTHONPATH
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-
 import numpy as np
 from sklearn.model_selection import train_test_split
 
