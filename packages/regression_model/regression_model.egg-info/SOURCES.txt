@@ -23,4 +23,3 @@ regression_model/processing/features.py
 regression_model/processing/preprocessors.py
 regression_model/processing/validation.py
 regression_model/trained_models/lasso_regression_output_v0.1.0.pkl
-tests/test_predict.py
