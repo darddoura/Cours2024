@@ -3,4 +3,4 @@ flask==1.0.2
 
 # local regression_model package
 # update with your local path
--e ../regression_model
+-e "C:\Users\Medio\Documents\Cegep\preparation solution\TP_GitHub\Cours2024\packages\regression_model"

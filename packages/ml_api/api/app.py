@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, jsonify
 
 from api.config import get_logger
 
@@ -11,6 +11,11 @@ def create_app(*, config_object) -> Flask:
 
     flask_app = Flask('ml_api')
     flask_app.config.from_object(config_object)
+
+    # Route pour l'URL racine `/`
+    @flask_app.route("/")
+    def home():
+        return jsonify({"message": "Welcome to the API!"}), 200
 
     # import blueprints
     from api.controller import prediction_app
